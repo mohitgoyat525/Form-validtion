@@ -26,16 +26,18 @@ const NewFormValidtion = () => {
             value.select !== '' &&
             value.checkBox
         ) {
+            console.log(value); 
             setValue(formData);
             setError(false);
-            console.log(value);
+
             Swal.fire({
                 title: 'Done',
                 text: 'Do you want to continue',
                 icon: "success",
-                confirmButtonText: 'Cool'
-            })
+                confirmButtonText: 'Nice'
+            });
         }
+     
       
     }
 
