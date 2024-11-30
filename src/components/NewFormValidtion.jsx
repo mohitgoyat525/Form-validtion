@@ -29,13 +29,14 @@ const NewFormValidtion = () => {
             setValue(formData);
             setError(false);
             console.log(value);
+            Swal.fire({
+                title: 'Done',
+                text: 'Do you want to continue',
+                icon: "success",
+                confirmButtonText: 'Cool'
+            })
         }
-        Swal.fire({
-            title: 'Done',
-            text: 'Do you want to continue',
-            icon: 'error',
-            confirmButtonText: 'Cool'
-        })
+      
     }
 
   return (
